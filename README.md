@@ -65,6 +65,6 @@ komutu ile kodumuzda bağımlılık olarak kullanılmıştır.
 
 Ev fiyatlarını araştırdığımız bu projede [house-price-gda.py](house-price-gda.py) dosyamızda bulunan kodu çaılştırdığımızda bizlere iterasyon dönüşlerini ve bu dönüşlerin (Her 100 dönüşte bir) optimum Qn değerlerinin dönüşlerini vermekte.
 
-1000\. itarasyon sonucu oluşan değerler ise ulaşılan en optimum değeri bizlere göstermekte.
+1000\. iterasyon sonucu oluşan değerler ise ulaşılan en optimum değeri bizlere göstermekte.
 
 Bunun sonucunda derleme sonucu oluşan optimum Qn değerleri ile modelimizi test edmek için giriş bekleyen bir fonksiyonumuz bulunmakta. Bunun amacı biz her derleme sonucunda farklı bir local minimum değere ulaşmış olabiliriz. Bunu test ederek en yakın sonuçları veren değere ulaşınca bizden bu modeli kayderek yeniden kullanıma sunmakdayız. Bunun için modeli kaydettikten sonra [run.py](run.py) çalıştırarak optimum modeli tekrar kullanabilmekteyiz.
