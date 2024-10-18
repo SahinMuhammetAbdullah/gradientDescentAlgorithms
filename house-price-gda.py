@@ -81,15 +81,15 @@ def gradient_descent(X, Y, Q0, Q1, Q2, ogrenme_orani, iterasyon_sayisi):
         if iterasyon % 100 == 0:
             print(f"Iterasyon {iterasyon}, Maliyet: {maliyet}")
             print(f"Q0: {Q0}, Q1: {Q1}, Q2: {Q2}")
-    return Q0, Q1, Q2
+    return Q0, Q1, Q2, maliyet
 
 # Öğrenme oranı ve iterasyon sayısı
-ogrenme_orani = 0.001
-iterasyon_sayisi = 1000
+ogrenme_orani = 0.243
+iterasyon_sayisi = 100
 
 # Gradyan inişi çalıştır
-Q0_optimal, Q1_optimal, Q2_optimal = gradient_descent(X, Y, Q0, Q1, Q2, ogrenme_orani, iterasyon_sayisi)
-print(f"Optimum Q0: {Q0_optimal}, Q1: {Q1_optimal}, Q2: {Q2_optimal}")
+Q0_optimal, Q1_optimal, Q2_optimal, maliyet_optimal = gradient_descent(X, Y, Q0, Q1, Q2, ogrenme_orani, iterasyon_sayisi)
+print(f"Optimum Q0: {Q0_optimal}, Q1: {Q1_optimal}, Q2: {Q2_optimal}, Maliyet: {maliyet_optimal}")
 
 # Test fonksiyonu
 def test_model(Q0, Q1, Q2):
